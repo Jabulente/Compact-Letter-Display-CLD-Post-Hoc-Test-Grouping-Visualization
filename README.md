@@ -36,18 +36,45 @@ pip install pandas numpy statsmodels scikit-posthocs seaborn matplotlib scipy
 
 ---
 
-## Folder Structure
-
+## 📂 Project Structure
 ```
-.
-├── data/                     # Sample datasets
-├── scripts/                  # Main analysis scripts
-│   ├── anova_tukey_cld.py    # ANOVA + Tukey HSD + CLD generation
-│   ├── summary_tables.py     # Publication-ready table creator
-├── output/                   # Generated tables and CLDs
-├── README.md
+📦 Compact Letters Display/
+│── 📂 Datasets/                      # Folder for raw and processed datasets  
+│   ├── Dataset.csv         # Cleaned and preprocessed data  
+│
+│── 📂 src/                       # Source code and core scripts  
+│   ├── __init__.py               # Makes this directory a Python package  
+│   ├── perform_tests.py          # Statistical test functions (e.g., ANOVA)  
+│   ├── cld_assignment.py         # Functions to assign compact letter displays  
+│   ├── visualization.py          # Plotting and visualization scripts  
+│
+│── 📂 Notebooks/                 # Jupyter Notebooks for exploratory analysis  
+│   ├── exploratory_analysis.ipynb # EDA and statistical exploration  
+│   ├── final_results.ipynb       # Notebook summarizing final results  
+│
+│── 📂 Figures/                   # Generated plots and charts  
+│   ├── cld_plot.png              # Example CLD visualization  
+│   ├── boxplot.png               # Boxplot with statistical comparisons  
+│   ├── barplot.png               # Barplot with compact letters  
+│
+│── 📂 Results/                   # Processed results, tables, and summary files  
+│   ├── anova_results.csv         # Results of ANOVA/statistical tests  
+│   ├── cld_results.csv           # Compact letter display assignments  
+│   ├── summary_table.csv         # Final structured results table  
+│
+│── 📂 docs/                      # Documentation and reports  
+│   ├── report.pdf                # Detailed project report (if applicable)  
+│
+│── 📂 tests/                     # Unit tests for functions  
+│   ├── test_perform_tests.py     # Tests for statistical functions  
+│   ├── test_visualization.py     # Tests for visualization functions  
+│
+│── .gitignore                    # Ignore unnecessary files  
+│── requirements.txt               # Required Python libraries  
+│── setup.py                       # Script for packaging (if needed)  
+│── main.py                        # Main script to execute the pipeline  
+├── README.md                 # Project overview, installation, and usage  
 ```
-
 ---
 
 ## Example Illustration
