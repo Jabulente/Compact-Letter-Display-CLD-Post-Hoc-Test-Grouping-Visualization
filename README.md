@@ -22,6 +22,21 @@ This repository offers a comprehensive collection of tools and practical example
 * **matplotlib** – For creating detailed, customizable plots.
 * **seaborn** – For high-level statistical visualizations and enhanced plotting aesthetics.
 
+## 📂 Project Structure
+
+
+```
+your-repo-name/
+│
+├── Datasets/                # Sample datasets used in notebooks and scripts
+│── Documents/               # Documentation and reports  
+├── Notebooks/               # Jupyter notebooks with step-by-step analysis examples
+├── Outputs/                 # Generated tables, plots, and reports
+├── Scripts/                 # Reusable Python scripts and functions for analysis
+├── requirements.txt         # List of required Python packages
+├── README.md                # Project overview and instructions
+└── LICENSE                  # License information
+```
 
 ## Installation & Setup
 
@@ -45,33 +60,52 @@ This repository offers a comprehensive collection of tools and practical example
    pip install pandas numpy statsmodels scikit-posthocs seaborn matplotlib scipy
    ```
 
----
+4. **Exploration**
 
-## Exploration
-
-* **Jupyter Notebooks:**
-  Navigate to the `/notebooks` directory to find interactive notebooks demonstrating how to perform ANOVA, Tukey’s HSD tests, generate Compact Letter Displays (CLDs), visualize data, and produce summary tables. These notebooks serve as guided tutorials and practical examples.
-
-* **Python Scripts:**
-  The `/scripts` folder contains modular scripts for data processing, statistical analysis, CLD generation, and table creation. You can run these scripts standalone or integrate them into your own data analysis pipelines.
+   * **Jupyter Notebooks:**
+     Navigate to the `/Notebooks` directory to find interactive notebooks demonstrating how to perform ANOVA, Tukey’s HSD tests, generate Compact Letter Displays (CLDs), visualize data, and produce summary tables. These notebooks serve as guided tutorials and practical examples.
+   
+   * **Python Scripts:**
+     The `/Scripts` folder contains modular scripts for data processing, statistical analysis, CLD generation, and table creation. You can run these scripts standalone or integrate them into your own data analysis pipelines.
 
 
-## 📂 Project Structure
+
+## 📊 Results and Outputs
+
+This project generates a complete statistical summary pipeline, from ANOVA testing to compact letter visualization. Below are examples of the key outputs produced:
+
+1. **ANOVA Table**
+
+Displays variance partitioning, F-values, and p-values across groups.
+
+![ANOVA Table](Outputs/anova_table.png)
+
+2. **Group Mean Comparative Analysis**
+
+Summarizes the mean and standard error of each group for interpretation and plotting.
+
+![Group Means](Outputs/group_mean_summary.png)
 
 
-```
-your-repo-name/
-│
-├── Datasets/                # Sample datasets used in notebooks and scripts
-│── Documents/               # Documentation and reports  
-├── Notebooks/               # Jupyter notebooks with step-by-step analysis examples
-├── Outputs/                 # Generated tables, plots, and reports
-├── Scripts/                 # Reusable Python scripts and functions for analysis
-├── requirements.txt         # List of required Python packages
-├── README.md                # Project overview and instructions
-└── LICENSE                  # License information
-```
+3. **Tukey’s HSD Results**
 
+Shows pairwise group comparisons with mean differences, confidence intervals, and significance status.
+
+
+![Tukey Results](Outputs/tukey_hsd_results.png)
+
+
+4. **Compact Letter Display (CLD) Table**
+
+Assigns letter labels to each group based on statistical similarity.
+
+![CLD Table](Outputs/cld_table.png)
+
+5. **CLD Plot**
+
+Visualizes group means with CLD annotations, making interpretation intuitive.
+
+![CLD Plot](Outputs/cld_plot.png)
 
 
 ## Usage Example
