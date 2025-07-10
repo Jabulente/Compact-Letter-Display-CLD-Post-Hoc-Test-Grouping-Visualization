@@ -74,74 +74,59 @@ your-repo-name/
 
 This project generates a complete statistical summary pipeline, from ANOVA testing to compact letter visualization. Below are examples of the key outputs produced:
 
-1. **ANOVA Table**
-
-Displays variance partitioning, F-values, and p-values across groups.
+1. **ANOVA Table**: Displays variance partitioning, F-values, and p-values across groups.
 
 ![ANOVA Table](Outputs/anova_table.png)
 
-2. **Group Mean Comparative Analysis**
-
-Summarizes the mean and standard error of each group for interpretation and plotting.
+2. **Group Mean Comparative Analysis**: Summarizes the mean and standard error of each group for interpretation and plotting.
 
 ![Group Means](Outputs/group_mean_summary.png)
 
 
-3. **Tukey’s HSD Results**
-
-Shows pairwise group comparisons with mean differences, confidence intervals, and significance status.
+3. **Tukey’s HSD Results**: Shows pairwise group comparisons with mean differences, confidence intervals, and significance status.
 
 
 ![Tukey Results](Outputs/tukey_hsd_results.png)
 
 
-4. **Compact Letter Display (CLD) Table**
-
-Assigns letter labels to each group based on statistical similarity.
+4. **Compact Letter Display (CLD) Table**: Assigns letter labels to each group based on statistical similarity.
 
 ![CLD Table](Outputs/cld_table.png)
 
-5. **CLD Plot**
-
-Visualizes group means with CLD annotations, making interpretation intuitive.
+5. **CLD Plot**: Visualizes group means with CLD annotations, making interpretation intuitive.
 
 ![CLD Plot](Outputs/cld_plot.png)
 
 
-## Usage Example
 
-```python
-from scripts.anova_tukey_cld import run_anova_and_cld
-from scripts.summary_tables import generate_summary_table
-
-cld_df = run_anova_and_cld(data, group_col='Treatment', value_col='Yield')
-summary = generate_summary_table(data, group_col='Treatment', value_col='Yield', cld_df=cld_df)
-print(summary)
-```
-
-
-
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! You can:
 
-* 📦 **Add new features** or enhance existing functionality
-* 🐛 **Report bugs** or suggest improvements by opening issues
-* 🧪 **Improve test coverage** or validation procedures
-* 📚 **Update documentation**, fix typos, or add usage examples
-* 📊 **Share new datasets or use cases** to expand project utility
-
-To contribute:
-
-1. Fork the repository
-2. Create a new branch
-3. Make your changes
-4. Commit and push
-5. Open a pull request for review
+*  **Add new features** or enhance existing functionality
+*  **Report bugs** or suggest improvements by opening issues
+*  **Improve test coverage** or validation procedures
+*  **Update documentation**, fix typos, or add usage examples
+*  **Share new datasets or use cases** to expand project utility
 
 We appreciate all contributions, big or small. Let’s build something useful together!
 
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the **MIT [LICENSE](./LICENSE)** — you are free to use, modify, and distribute this work with proper attribution.
+
+
+## Contact
+
+This analysis was performed by **Jabulente**, a passionate and dedicated data analyst committed to leveraging data for impactful insights and practical solutions. For questions, collaborations, or further discussions, feel free to get in touch.
+
+
+<div align="center">
+
+[![GitHub](https://img.shields.io/badge/GitHub-Jabulente-black?logo=github)](https://github.com/Jabulente) | 
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Jabulente-blue?logo=linkedin)](https://linkedin.com/in/jabulente-208019349) | 
+[![Email](https://img.shields.io/badge/Email-jabulente@hotmail.com-red?logo=gmail)](mailto:Jabulente@hotmail.com)
+
+</div>
+
