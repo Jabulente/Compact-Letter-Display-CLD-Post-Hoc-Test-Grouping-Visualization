@@ -28,8 +28,8 @@ This repository offers a comprehensive collection of tools and practical example
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/your-username/your-repo-name.git
-   cd your-repo-name
+   git clone [https://github.com/your-username/your-repo-name.git](https://github.com/Jabulente/Compact-Letter-Display-CLD-Post-Hoc-Test-Grouping-Visualization.git)
+   cd Compact-Letter-Display-CLD-Post-Hoc-Test-Grouping-Visualization
    ```
 
 2. **Create and activate a virtual environment** (optional but recommended)
